@@ -16,6 +16,7 @@ export default defineApp(async (_req, ctx) => {
         {/* Enable View Transitions API */}
         <meta name="view-transition" content="same-origin" />
 
+        <title>Festa junina</title>
         {/* Tailwind v3 CSS file */}
         <link
           href={asset(`/styles.css?revision=${revision}`)}
