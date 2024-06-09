@@ -8,6 +8,6 @@ interface Props {
   subtitle_Two?: string;
 }
 
-export default function Section({ title_One = "Capy", }: Props) {
+export default function Section({ title_One = "Festa", title_Two = "Junina", subtitle_One = "Celebre", subtitle_Two = "Viva São João, vamos festejar com alegria e amor!" }: Props) {
   return <div>Hello {name}</div>
 }
