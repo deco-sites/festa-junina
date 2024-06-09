@@ -4,6 +4,9 @@
   "sections": [
     {
       "__resolveType": "Preview /sections/Header.tsx"
+    },
+    {
+      "__resolveType": "Preview /sections/Content.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
