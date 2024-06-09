@@ -1,3 +1,5 @@
+import Image from "apps/website/components/Image.tsx";
+
 interface Props {
   /**
   * @description The description of name.
@@ -111,6 +113,10 @@ export default function Section({ title_One = "Festa", title_Two = "Junina", sub
       </div>
 
       <div class="absolute bottom-0 w-full flex justify-between">
+          <Image src="/menina.png" class="absolute bottom-32 left-20"></Image>
+          <Image src="/image-junina.png" class="absolute bottom-80 left-36"></Image>
+          <Image src="/menino.png" class="absolute bottom-32 left-80"></Image>
+          <Image src="/image-junina.png" class="absolute bottom-80 left-96"></Image>
           <div class="w-2/5 h-28 bg-[#224D6C] rounded-tr-3xl"></div>
           <div class="w-28 h-14 bg-[#00C2C9] rounded-tl-3xl absolute bottom-0 right-0"></div>
       </div>
