@@ -27,8 +27,5 @@ export default function Section({ name_One = "Home", name_Two = "Sobre", name_Th
         </ul>
       </nav>
 
-      <form>
-        <input type="text" placeholder="Pesquise" class="bg-[#224D6C] w-72 h-12 rounded-btn px-5 placeholder:text-white text-white outline-none"/>
-      </form>
   </header>)
 }
