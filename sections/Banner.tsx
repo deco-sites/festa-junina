@@ -7,8 +7,8 @@ interface Props {
 
 export default function Section({ name = "Capy" }: Props) {
   return (
-    <div class="mt-52 w-screen h-[290px]">
-      <div class="w-screen h-[290px] bg-[url('/photo-1.png')]"></div>
+    <div class="mt-52 w-full h-[290px]">
+      <div class="w-full h-[290px] bg-[url('/banner.png')]"></div>
     </div>
   )
 }
