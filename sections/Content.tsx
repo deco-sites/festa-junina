@@ -12,7 +12,7 @@ interface Props {
 
 export default function Section({ title_One = "Festa", title_Two = "Junina", subtitle_One = "Celebre", subtitle_Two = "Viva São João, vamos festejar com alegria e amor!" }: Props) {
   return (
-    <div class="w-full">
+    <div class="w-full h-screen">
       <div class="absolute w-96 h-28 bg-[#FF508A] rounded-r-3xl top-40"></div>
       <div class="absolute w-28 h-32 bg-[#FFBA48] rounded-r-3xl top-56"></div>
 
