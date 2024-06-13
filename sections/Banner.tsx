@@ -6,5 +6,9 @@ interface Props {
 }
 
 export default function Section({ name = "Capy" }: Props) {
-  return <div>Hello {name}</div>
+  return (
+    <div class="mt-52 w-screen h-[290px]">
+      <div class="w-screen h-[290px] bg-[url('/photo-1.png')]"></div>
+    </div>
+  )
 }
