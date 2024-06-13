@@ -5,73 +5,7 @@
       "name": "Site Home",
       "pinned": true,
       "icon": "home",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [
-          {
-            "type": "row",
-            "isClosable": true,
-            "reorderEnabled": true,
-            "title": "",
-            "content": [
-              {
-                "type": "stack",
-                "width": 100,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "dashboard::Home::home::Home::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-dashboard::Home::home::Home::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "dashboard::Home::home::Home::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
+      "layout": [],
       "tabs": {
         "dashboard::Home::home::Home::%7B%7D": {
           "name": "Home",
@@ -91,6 +25,26 @@
       "name": "Pages",
       "pinned": true,
       "icon": "files",
+      "layout": [],
+      "tabs": {
+        "pages::List::list::List::%7B%7D": {
+          "name": "List",
+          "icon": "list",
+          "render": "function",
+          "viewId": "List",
+          "id": "pages::List::list::List::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "category": "Content"
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "pinned": true,
+      "icon": "block",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -137,12 +91,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "pages::List::list::List::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-pages::List::list::List::%7B%7D\" />",
+                    "id": "sections::List::list::List::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-sections::List::list::List::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "pages::List::list::List::%7B%7D"
+                      "id": "sections::List::list::List::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -158,26 +112,6 @@
         "openPopouts": [],
         "maximisedItemId": null
       },
-      "tabs": {
-        "pages::List::list::List::%7B%7D": {
-          "name": "List",
-          "icon": "list",
-          "render": "function",
-          "viewId": "List",
-          "id": "pages::List::list::List::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "category": "Content"
-    },
-    {
-      "id": "sections",
-      "name": "Sections",
-      "pinned": true,
-      "icon": "block",
-      "layout": [],
       "tabs": {
         "sections::List::list::List::%7B%7D": {
           "name": "List",
@@ -494,6 +428,52 @@
       "category": "Management"
     },
     {
+      "id": "assets",
+      "name": "Assets",
+      "pinned": true,
+      "icon": "photo",
+      "layout": [],
+      "tabs": {
+        "assets::Assets::photo::Assets::%7B%7D": {
+          "name": "Assets",
+          "icon": "photo",
+          "render": "function",
+          "viewId": "Assets",
+          "id": "assets::Assets::photo::Assets::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "category": "Content"
+    },
+    {
+      "id": "experiments",
+      "name": "Experiments",
+      "pinned": true,
+      "icon": "experiment",
+      "layout": [],
+      "tabs": {
+        "experiments::experiments::experiment::experiments::%7B%7D": {
+          "name": "experiments",
+          "icon": "experiment",
+          "render": "function",
+          "viewId": "experiments",
+          "id": "experiments::experiments::experiment::experiments::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "category": "Advanced",
+      "tags": [
+        {
+          "label": "BETA",
+          "color": "positive"
+        }
+      ]
+    },
+    {
       "id": "/.deco/blocks/pages-Start-15553.json",
       "name": "Home",
       "pinned": false,
@@ -537,20 +517,21 @@
             "content": [
               {
                 "type": "stack",
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
-                "width": 50,
                 "content": [
                   {
-                    "id": "/.deco/blocks/pages-Start-15553.json::Properties:undefined:listProperties{}",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-/.deco/blocks/pages-Start-15553.json::Properties:undefined:listProperties{}\" />",
+                    "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "/.deco/blocks/pages-Start-15553.json::Properties:undefined:listProperties{}"
+                      "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -558,20 +539,21 @@
               },
               {
                 "type": "stack",
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
-                "width": 50,
                 "content": [
                   {
-                    "id": "/.deco/blocks/pages-Start-15553.json::Preview:undefined:worldPreview{}",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-/.deco/blocks/pages-Start-15553.json::Preview:undefined:worldPreview{}\" />",
+                    "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "/.deco/blocks/pages-Start-15553.json::Preview:undefined:worldPreview{}"
+                      "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -587,105 +569,31 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "/.deco/blocks/pages-Start-15553.json::Properties:undefined:listProperties{}": {
+        "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D": {
           "name": "Properties",
           "icon": "list",
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
-          "id": "/.deco/blocks/pages-Start-15553.json::Properties:undefined:listProperties{}",
+          "width": 30,
+          "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
-        "/.deco/blocks/pages-Start-15553.json::Preview:undefined:worldPreview{}": {
+        "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D": {
           "name": "Preview",
           "icon": "world",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
-          "id": "/.deco/blocks/pages-Start-15553.json::Preview:undefined:worldPreview{}",
+          "width": 70,
+          "id": "%2F.deco%2Fblocks%2Fpages-Start-15553.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
         }
       }
-    },
-    {
-      "id": "assets",
-      "name": "Assets",
-      "pinned": true,
-      "icon": "photo",
-      "layout": [],
-      "tabs": {
-        "assets::Assets::photo::Assets::%7B%7D": {
-          "name": "Assets",
-          "icon": "photo",
-          "render": "function",
-          "viewId": "Assets",
-          "id": "assets::Assets::photo::Assets::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "category": "Content"
-    },
-    {
-      "id": "Staging",
-      "name": "Staging",
-      "pinned": false,
-      "icon": "rocket",
-      "layout": [
-        {
-          "i": "Staging::Environment:undefined:rocketEnvironment{}",
-          "w": 24,
-          "h": 24,
-          "x": 0,
-          "y": 0,
-          "moved": false,
-          "static": false
-        }
-      ],
-      "tabs": {
-        "Staging::Environment:undefined:rocketEnvironment{}": {
-          "name": "Environment",
-          "icon": "rocket",
-          "render": "function",
-          "viewId": "Environment",
-          "id": "Staging::Environment:undefined:rocketEnvironment{}",
-          "state": {
-            "__signal": null
-          }
-        }
-      }
-    },
-    {
-      "id": "experiments",
-      "name": "Experiments",
-      "pinned": true,
-      "icon": "experiment",
-      "layout": [],
-      "tabs": {
-        "experiments::experiments::experiment::experiments::%7B%7D": {
-          "name": "experiments",
-          "icon": "experiment",
-          "render": "function",
-          "viewId": "experiments",
-          "id": "experiments::experiments::experiment::experiments::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "tags": [
-        {
-          "label": "BETA",
-          "color": "positive"
-        }
-      ],
-      "category": "Advanced"
     },
     {
       "id": "Publish",
@@ -773,6 +681,526 @@
       }
     },
     {
+      "id": "/.deco/blocks/Preview%20%2Fsections%2FContent.tsx.json",
+      "name": "Preview /sections/Content.tsx",
+      "pinned": false,
+      "icon": "package",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 41.66666666666667,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Properties::list::Properties::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Properties::list::Properties::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Properties::list::Properties::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true,
+                    "width": 30
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 58.333333333333336,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D"
+                    },
+                    "width": 70,
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Properties::list::Properties::%7B%7D": {
+          "name": "Properties",
+          "icon": "list",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Properties",
+          "width": 30,
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Properties::list::Properties::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        },
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D": {
+          "name": "Preview",
+          "icon": "world",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Preview",
+          "width": 70,
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "/.deco/blocks/Preview%20%2Fsections%2FAbout.tsx.json",
+      "name": "About.tsx",
+      "pinned": false,
+      "icon": "code",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Preview::world::Preview::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Preview::world::Preview::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Code::code::Code::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Code::code::Code::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Code::code::Code::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Preview::world::Preview::%7B%7D": {
+          "name": "Preview",
+          "icon": "world",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Preview",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Preview::world::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        },
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Code::code::Code::%7B%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Code",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FAbout.tsx.json::Code::code::Code::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "/.deco/blocks/Preview%20%2Fsections%2FBanner.tsx.json",
+      "name": "Banner.tsx",
+      "pinned": false,
+      "icon": "code",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Preview::world::Preview::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Preview::world::Preview::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Code::code::Code::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Code::code::Code::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Code::code::Code::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Preview::world::Preview::%7B%7D": {
+          "name": "Preview",
+          "icon": "world",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Preview",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Preview::world::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        },
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Code::code::Code::%7B%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Code",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FBanner.tsx.json::Code::code::Code::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "/.deco/blocks/Preview%20%2Fsections%2FFixed.tsx.json",
+      "name": "Fixed.tsx",
+      "pinned": false,
+      "icon": "code",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Preview::world::Preview::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Preview::world::Preview::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Code::code::Code::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Code::code::Code::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Code::code::Code::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Preview::world::Preview::%7B%7D": {
+          "name": "Preview",
+          "icon": "world",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Preview",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Preview::world::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        },
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Code::code::Code::%7B%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Code",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFixed.tsx.json::Code::code::Code::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "{\"oid\":\"8c2a219937ba751b9c2b7f0f01706398e489b253\",\"short\":\"8c2a219\",\"commit\":{\"message\":\"feat: remove search header, coisas voando,  fogueira e ajustes estrela\\n\",\"parent\":[\"53b3fc79e64f1f048c4e43e9bbf6afbaff06fa88\"],\"tree\":\"cba6e8cf83bad33f50ded31ce40408a2bdea13c0\",\"author\":{\"name\":\"HenriqueeAl\",\"email\":\"henrifulls@gmail.com\",\"timestamp\":1718071723,\"timezoneOffset\":180},\"committer\":{\"name\":\"HenriqueeAl\",\"email\":\"henrifulls@gmail.com\",\"timestamp\":1718071723,\"timezoneOffset\":180}}}",
+      "name": "Release 8c2a219",
+      "pinned": false,
+      "icon": "rocket",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {}
+    },
+    {
       "id": "deco-records-space",
       "name": "Records",
       "pinned": true,
@@ -799,10 +1227,10 @@
       "category": "Content"
     },
     {
-      "id": "/.deco/blocks/Preview%20%2Fsections%2FFooter.tsx.json",
-      "name": "Preview /sections/Footer.tsx",
+      "id": "{\"oid\":\"5a1a4a3d9183df203927dae2e75c5f5e8f157489\",\"short\":\"5a1a4a3\",\"commit\":{\"message\":\"Release staging environment with 0 changes made by \\n\",\"parent\":[\"6cf3407067edf2c731c3b615849b263dd9bc68a4\"],\"tree\":\"dd2defe725b340cab3dfe18bbfca1e5d7560bb38\",\"author\":{\"name\":\"Henrique Almeida de Oliveira\",\"email\":\"henrique.almeida231@hotmail.com\",\"timestamp\":1718242223,\"timezoneOffset\":0},\"committer\":{\"name\":\"Henrique Almeida de Oliveira\",\"email\":\"henrique.almeida231@hotmail.com\",\"timestamp\":1718242223,\"timezoneOffset\":0}}}",
+      "name": "Release 5a1a4a3",
       "pinned": false,
-      "icon": "package",
+      "icon": "rocket",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -842,43 +1270,20 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 100,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Properties::list::Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Properties::list::Properties::%7B%7D\" />",
+                    "id": "%7B%22oid%22%3A%225a1a4a3d9183df203927dae2e75c5f5e8f157489%22%2C%22short%22%3A%225a1a4a3%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%200%20changes%20made%20by%20%5Cn%22%2C%22parent%22%3A%5B%226cf3407067edf2c731c3b615849b263dd9bc68a4%22%5D%2C%22tree%22%3A%22dd2defe725b340cab3dfe18bbfca1e5d7560bb38%22%2C%22author%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%7B%22oid%22%3A%225a1a4a3d9183df203927dae2e75c5f5e8f157489%22%2C%22short%22%3A%225a1a4a3%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%200%20changes%20made%20by%20%5Cn%22%2C%22parent%22%3A%5B%226cf3407067edf2c731c3b615849b263dd9bc68a4%22%5D%2C%22tree%22%3A%22dd2defe725b340cab3dfe18bbfca1e5d7560bb38%22%2C%22author%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Properties::list::Properties::%7B%7D"
+                      "id": "%7B%22oid%22%3A%225a1a4a3d9183df203927dae2e75c5f5e8f157489%22%2C%22short%22%3A%225a1a4a3%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%200%20changes%20made%20by%20%5Cn%22%2C%22parent%22%3A%5B%226cf3407067edf2c731c3b615849b263dd9bc68a4%22%5D%2C%22tree%22%3A%22dd2defe725b340cab3dfe18bbfca1e5d7560bb38%22%2C%22author%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D"
                     },
-                    "width": 30,
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 58.333333333333336,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Preview::world::Preview::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Preview::world::Preview::%7B%7D"
-                    },
-                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -894,26 +1299,12 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Properties::list::Properties::%7B%7D": {
-          "name": "Properties",
-          "icon": "list",
-          "accepts": "function",
+        "%7B%22oid%22%3A%225a1a4a3d9183df203927dae2e75c5f5e8f157489%22%2C%22short%22%3A%225a1a4a3%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%200%20changes%20made%20by%20%5Cn%22%2C%22parent%22%3A%5B%226cf3407067edf2c731c3b615849b263dd9bc68a4%22%5D%2C%22tree%22%3A%22dd2defe725b340cab3dfe18bbfca1e5d7560bb38%22%2C%22author%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D": {
+          "name": "Release",
+          "icon": "rocket",
           "render": "function",
-          "viewId": "Properties",
-          "width": 30,
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Properties::list::Properties::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Preview::world::Preview::%7B%7D": {
-          "name": "Preview",
-          "icon": "world",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Preview",
-          "width": 70,
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter.tsx.json::Preview::world::Preview::%7B%7D",
+          "viewId": "Release",
+          "id": "%7B%22oid%22%3A%225a1a4a3d9183df203927dae2e75c5f5e8f157489%22%2C%22short%22%3A%225a1a4a3%22%2C%22commit%22%3A%7B%22message%22%3A%22Release%20staging%20environment%20with%200%20changes%20made%20by%20%5Cn%22%2C%22parent%22%3A%5B%226cf3407067edf2c731c3b615849b263dd9bc68a4%22%5D%2C%22tree%22%3A%22dd2defe725b340cab3dfe18bbfca1e5d7560bb38%22%2C%22author%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%2C%22committer%22%3A%7B%22name%22%3A%22Henrique%20Almeida%20de%20Oliveira%22%2C%22email%22%3A%22henrique.almeida231%40hotmail.com%22%2C%22timestamp%22%3A1718242223%2C%22timezoneOffset%22%3A0%7D%7D%7D::Release::rocket::Release::%7B%7D",
           "state": {
             "__signal": null
           }
@@ -921,8 +1312,8 @@
       }
     },
     {
-      "id": "/.deco/blocks/Preview%20%2Fsections%2FHeader.tsx.json",
-      "name": "Header.tsx",
+      "id": "/.deco/blocks/Preview%20%2Fsections%2FPhotos.tsx.json",
+      "name": "Photos.tsx",
       "pinned": false,
       "icon": "code",
       "layout": {
@@ -971,12 +1362,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Preview::world::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Preview::world::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Preview::world::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Preview::world::Preview::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -992,12 +1383,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Code::code::Code::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Code::code::Code::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Code::code::Code::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Code::code::Code::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Code::code::Code::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Code::code::Code::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -1014,266 +1405,26 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Preview::world::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Preview::world::Preview::%7B%7D": {
           "name": "Preview",
           "icon": "world",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Preview::world::Preview::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
         },
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Code::code::Code::%7B%7D": {
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Code::code::Code::%7B%7D": {
           "name": "Code",
           "icon": "code",
           "accepts": "function",
           "render": "function",
           "viewId": "Code",
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Code::code::Code::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FPhotos.tsx.json::Code::code::Code::%7B%7D",
           "state": {
             "__signal": null
-          }
-        }
-      }
-    },
-    {
-      "id": "/.deco/blocks/Preview%20%2Fsections%2FItWorks.tsx.json",
-      "name": "Preview /sections/ItWorks.tsx",
-      "pinned": false,
-      "icon": "package",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [
-          {
-            "type": "row",
-            "isClosable": true,
-            "reorderEnabled": true,
-            "title": "",
-            "content": [
-              {
-                "type": "stack",
-                "width": 41.66666666666667,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Properties::list::Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Properties::list::Properties::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Properties::list::Properties::%7B%7D"
-                    },
-                    "width": 30,
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 58.333333333333336,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Preview::world::Preview::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Preview::world::Preview::%7B%7D"
-                    },
-                    "width": 70,
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
-      "tabs": {
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Properties::list::Properties::%7B%7D": {
-          "name": "Properties",
-          "icon": "list",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Properties",
-          "width": 30,
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Properties::list::Properties::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Preview::world::Preview::%7B%7D": {
-          "name": "Preview",
-          "icon": "world",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Preview",
-          "width": 70,
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FItWorks.tsx.json::Preview::world::Preview::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      }
-    },
-    {
-      "id": "/.deco/blocks/Preview%20%2Fsections%2FContent.tsx.json",
-      "name": "Content.tsx",
-      "pinned": false,
-      "icon": "code",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [
-          {
-            "type": "row",
-            "isClosable": true,
-            "reorderEnabled": true,
-            "title": "",
-            "content": [
-              {
-                "type": "stack",
-                "width": 50,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 50,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Code::code::Code::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Code::code::Code::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Code::code::Code::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
-      "tabs": {
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D": {
-          "name": "Preview",
-          "icon": "world",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Preview",
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Preview::world::Preview::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Code::code::Code::%7B%7D": {
-          "name": "Code",
-          "icon": "code",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Code",
-          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FContent.tsx.json::Code::code::Code::%7B%7D",
-          "state": {
-            "__signal": "error"
           }
         }
       }

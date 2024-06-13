@@ -52,5 +52,17 @@
   "/.deco/blocks/Preview%20%2Fsections%2FContent.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Content.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FBanner.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Banner.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FFixed.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Fixed.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FPhotos.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Photos.tsx"
   }
 }
