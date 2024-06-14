@@ -59,13 +59,13 @@ export default function Section({ name = "Capy" }: Props) {
       </div>
       {/* Star */}
 
-      <Image src="/image-junina.png" class="fixed bottom-80 left-36 animate-bullet"></Image>star.png
+      <Image src="/image-junina.png" class="fixed bottom-80 left-36 animate-bullet"></Image>
       <Image src="/image-junina.png" class="fixed bottom-96 left-80 animate-bullet2"></Image>
       <Image src="/image-junina.png" class="fixed bottom-0 left-96 animate-bullet3"></Image>
       <Image src="/image-junina.png" class="fixed bottom-56 -left-2/4 animate-bullet"></Image>
       <Image src="/image-junina.png" class="fixed bottom-40 right-96 animate-bullet2"></Image>
       <Image src="/image-junina.png" class="fixed bottom-5 right-2/4 animate-bullet"></Image>
-      <Image src="/image-junina.png" class="fixed bottom-5 right-3/4 animate-bullet"></Image>
+      <Image src="/image-junina.png" class="fixed bottom-5 right-1/4 animate-bullet"></Image>
       <Image src="/image-junina.png" class="fixed bottom-5 right-24 animate-bullet3"></Image>
     </>
   )
