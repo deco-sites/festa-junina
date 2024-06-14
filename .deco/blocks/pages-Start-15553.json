@@ -13,6 +13,12 @@
     },
     {
       "__resolveType": "Preview /sections/Banner.tsx"
+    },
+    {
+      "__resolveType": "Preview /sections/Banner2.tsx"
+    },
+    {
+      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
